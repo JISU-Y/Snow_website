@@ -6,11 +6,29 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
+}
+
+/* Nav Bar */
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  padding: 33px 0;
   align-items: center;
-  height: 100vh;
-  overflow: hidden;
-  margin: 0; */
+}
+
+.snow-logo {
+  /* 193x75 */
+  width: 90px;
+  height: 35px;
+}
+
+.nav-menu {
+  display: flex;
+}
+
+.nav-menu li {
+  font-size: 14px;
+  list-style-type: none;
+  margin: 15px;
+  cursor: pointer;
 }
