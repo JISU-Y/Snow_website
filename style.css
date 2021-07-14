@@ -124,7 +124,7 @@ body {
 .about-agency-container {
   background-color: #fff;
   width: 100%;
-  height: 63%;
+  height: 443px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -151,5 +151,35 @@ body {
 .about-props-container {
   background-color: #222;
   width: 100%;
-  height: 37%;
+  height: 265px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  /* flex wrap 아닌 듯? 4-> 2 -> 1 이렇게 감 */
+  flex-wrap: wrap;
+  padding-top: 100px;
+}
+
+.about-props-container .about-prop {
+  display: flex;
+  color: #fff;
+  width: 210px;
+  margin: 15px 0;
+}
+
+.about-prop i {
+  font-size: 2.7rem;
+  margin-right: 20px;
+}
+
+.about-prop .prop-props .prop-num {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.about-prop .prop-props .prop-name {
+  font-size: 0.97rem;
+  font-weight: 500;
+  line-height: 1.65;
+  letter-spacing: 0.004rem;
 }
