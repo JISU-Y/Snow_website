@@ -36,7 +36,12 @@ body {
   list-style-type: none;
   margin: 15px;
   cursor: pointer;
-  color: #ddd;
+  color: #ccc;
+  transition: 0.2s ease-in;
+}
+
+.nav-menu li:hover {
+  color: #fff;
 }
 
 /* Home */
@@ -109,4 +114,42 @@ body {
 .home-container .down-btn:hover {
   border: 1px solid #fff;
   color: #fff;
+}
+
+/* About */
+#about {
+  height: 76vh;
+}
+
+.about-agency-container {
+  background-color: #fff;
+  width: 100%;
+  height: 63%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-agency-container .about-title {
+  font-size: 40px;
+}
+
+.about-agency-container .about-description {
+  margin: 30px 0;
+  width: 60%;
+  text-align: center;
+  word-break: keep-all;
+  letter-spacing: 0.004rem;
+  word-spacing: 5px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.65;
+  color: #666;
+}
+
+.about-props-container {
+  background-color: #222;
+  width: 100%;
+  height: 37%;
 }
