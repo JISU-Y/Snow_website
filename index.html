@@ -219,7 +219,6 @@
             consectetur.
           </p>
           <ul class="info-lists">
-            <span>Address:</span>
             <li><span>Address:</span> 10111 Santa Monica Boulevard, LA</li>
             <li><span>Phone:</span> +44 987 065 908</li>
             <li><span>Email:</span> info@Example.com</li>
@@ -227,10 +226,12 @@
           </ul>
         </div>
         <form action="submit" class="customer-info-form">
-          <input type="text" class="name" />
-          <input type="text" class="email" />
-          <input type="text" class="title" />
-          <input type="text" class="comment" />
+          <div class="name-email-wrap">
+            <input type="text" class="name" placeholder="Your Name" />
+            <input type="text" class="email" placeholder="Your Email" />
+          </div>
+          <input type="text" class="title" placeholder="Your Title" />
+          <input type="text" class="comment" placeholder="Your Comment" />
           <button class="send-btn">SEND MESSAGE</button>
         </form>
       </div>

@@ -375,12 +375,87 @@ body {
 
 .contact-wrap {
   display: flex;
+  padding: 100px 25px;
+  background-color: #bbb;
+  justify-content: center;
 }
 
 .contact-wrap .contact-info-container {
+  width: 45%;
+  max-width: 500px;
+  height: 350px;
+  padding: 30px 15px;
+}
+
+.contact-wrap .contact-info-container .info-title {
+  font-size: 40px;
+}
+
+.contact-wrap .contact-info-container .info-description {
+  margin: 30px 0;
+  word-break: keep-all;
+  letter-spacing: 0.004rem;
+  word-spacing: 5px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.65;
+  color: #666;
+}
+
+.contact-wrap .contact-info-container .info-lists {
+  list-style-type: none;
+  padding: 0;
+  color: #666;
+}
+
+.contact-info-container .info-lists li {
+  margin-bottom: 12px;
+}
+
+.info-lists li span {
+  color: #111;
+  font-weight: bold;
 }
 
 .contact-wrap .customer-info-form {
+  width: 55%;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 600px;
+  padding: 30px 15px;
+}
+
+.customer-info-form .name-email-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.customer-info-form .name-email-wrap input {
+  width: 47%;
+}
+.customer-info-form input {
+  height: 50px;
+  padding: 16px 22px;
+  font-size: 0.95rem;
+  font-weight: 400;
+  line-height: 1.2;
+  background-color: #fff;
+  border: none;
+}
+.customer-info-form input.comment {
+  height: 150px;
+  padding: 0 22px 100px 22px;
+}
+
+.contact-wrap .customer-info-form .send-btn {
+  width: 150px;
+  height: 50px;
+  border: none;
+  background-color: #111;
+  color: #fff;
+  cursor: pointer;
 }
 
 .contact-link {
