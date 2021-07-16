@@ -368,3 +368,47 @@ body {
 .blog-container .button-container {
   margin-bottom: 100px;
 }
+
+/* Contact */
+#contact {
+}
+
+.contact-wrap {
+  display: flex;
+}
+
+.contact-wrap .contact-info-container {
+}
+
+.contact-wrap .customer-info-form {
+}
+
+.contact-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 45px 0 25px 0;
+  color: #bbb;
+}
+
+.contact-link .icon-container {
+  margin-bottom: 12px;
+  font-size: 1rem;
+}
+
+.contact-link .icon-container i {
+  margin: 0 0.5rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.contact-link .icon-container i:hover {
+  color: black;
+}
+
+.contact-link p {
+  margin-bottom: 1.6rem;
+  font-size: 0.95rem;
+  font-weight: 400;
+}
