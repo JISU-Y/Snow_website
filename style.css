@@ -6,8 +6,14 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Work Sans", sans-serif;
   /* color: #5f5f5f; */
+}
+
+h1,
+h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: bolder;
 }
 
 /* Nav Bar */
@@ -165,17 +171,23 @@ body {
   height: 265px;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.about-props-container .about-props-wrap {
+  width: 100%;
+  height: 265px;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
   align-items: flex-start;
-  /* flex wrap 아닌 듯? 4-> 2 -> 1 이렇게 감 */
-  flex-wrap: wrap;
-  padding-top: 100px;
+  padding-top: 110px;
 }
 
 .about-props-container .about-prop {
   display: flex;
   color: #fff;
-  width: 210px;
-  margin: 15px 0;
+  width: 25%;
 }
 
 .about-prop i {
@@ -294,6 +306,19 @@ body {
   line-height: 1.45;
   margin-bottom: 1.15rem;
   text-align: center;
+  font-family: "Playfair Display", serif;
+}
+.project-testimonial
+  .testimonial-feedback
+  .feedback-wrap
+  .feedback-description::before {
+  content: "“ ";
+}
+.project-testimonial
+  .testimonial-feedback
+  .feedback-wrap
+  .feedback-description::after {
+  content: " ”";
 }
 
 .project-testimonial .testimonial-feedback .feedback-wrap .feedback-talker {
@@ -397,6 +422,26 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  position: relative;
+}
+
+.blog-card .card-info .card-tag {
+  width: 90px;
+  height: 30px;
+  border: none;
+  background-color: #111;
+  color: #fff;
+  font-size: 0.8rem;
+  text-align: center;
+  font-weight: 500;
+  padding: 5.5px 15px;
+  position: absolute;
+  top: -45px;
+  left: 12px;
+  cursor: pointer;
+}
+.blog-card .card-info .card-tag:hover {
+  opacity: 0.7;
 }
 
 .card-info .card-title {
