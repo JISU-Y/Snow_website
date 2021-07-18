@@ -251,19 +251,55 @@ h2 {
 .project-lists .list {
   width: 310px;
   height: 310px;
+  position: relative;
+  cursor: pointer;
+}
+
+.project-lists .list .list-img {
+  width: 310px;
+  height: 310px;
   cursor: pointer;
   position: relative;
 }
-
-/* ????? 위로 어떻게 덮지 js로 해야하나 */
-.project-lists .list:hover:after {
-  content: "";
+.project-lists .list .list-description {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background: black;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  opacity: 0;
+  transition: 0.3s ease-in;
+}
+
+.project-lists .list:hover .list-description {
+  opacity: 1;
+}
+
+.list-description .list-title,
+.list-description .list-description-desc {
+  transform: translateY(20%);
+  opacity: 0;
+  transition: 0.3s ease-in;
+  margin-bottom: 10px;
+  font-size: 1.69rem;
+}
+
+.list-description .list-description-desc {
+  transition-delay: 0.3s;
+  font-size: 0.95rem;
+}
+
+.project-lists .list:hover .list-title,
+.project-lists .list:hover .list-description-desc {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 .project-testimonial {
