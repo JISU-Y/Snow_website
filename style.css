@@ -177,17 +177,24 @@ h2 {
 .about-props-container .about-props-wrap {
   width: 100%;
   height: 265px;
-  max-width: 1200px;
+  max-width: 1000px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   padding-top: 110px;
 }
 
+.about-props-container .about-props-wrap .about-props-wrap-col1 {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+
 .about-props-container .about-prop {
   display: flex;
   color: #fff;
-  width: 25%;
+  width: 50%;
+  justify-content: center;
 }
 
 .about-prop i {
@@ -435,8 +442,8 @@ h2 {
 }
 
 .blog-container .blog-card-container .blog-card {
-  width: 280px;
-  height: 410px;
+  width: 370px;
+  height: 450px;
   padding: 0 15px;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.03);
   cursor: pointer;
@@ -619,4 +626,62 @@ h2 {
   margin-bottom: 1.6rem;
   font-size: 0.95rem;
   font-weight: 400;
+}
+
+/* media query */
+@media (max-width: 900px) {
+  /* About */
+
+  .about-props-container {
+    height: 324px;
+  }
+
+  .about-props-container .about-props-wrap {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+    justify-content: space-around;
+  }
+
+  .about-props-container .about-props-wrap .about-props-wrap-col1 {
+    width: 80%;
+  }
+
+  .about-props-container .about-prop {
+    justify-content: flex-start;
+  }
+
+  /* Projects */
+  .project-lists .list,
+  .project-lists .list .list-img {
+    width: 345px;
+    height: 345px;
+  }
+
+  /* Blog - card */
+  .blog-container .blog-card-container {
+    max-width: 800px;
+  }
+
+  .blog-container .blog-card-container .blog-card {
+    width: 280px;
+    height: 410px;
+  }
+
+  /* Contact */
+  .contact-wrap {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-wrap .contact-info-container {
+    width: 90%;
+    max-width: 800px;
+  }
+
+  .contact-wrap .customer-info-form {
+    width: 90%;
+    max-width: 800px;
+  }
 }
