@@ -33,10 +33,15 @@ h2 {
   max-width: 1200px;
 }
 
-.snow-logo {
+.snow-logo,
+.snow-logo.white {
   /* 193x75 */
   width: 90px;
   height: 35px;
+}
+
+.snow-logo.white {
+  display: none;
 }
 
 .nav-menu {
@@ -54,6 +59,12 @@ h2 {
 
 .nav-menu li:hover {
   color: #fff;
+}
+
+.nav-menu-bars {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 
 /* Home */
@@ -630,6 +641,29 @@ h2 {
 
 /* media query */
 @media (max-width: 900px) {
+  /* Nav Bar */
+  .navigation .nav-wrap {
+    padding: 33px 0;
+    width: 80%;
+    max-width: 800px;
+  }
+
+  .snow-logo {
+    display: none;
+  }
+
+  .snow-logo.white {
+    display: unset;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .nav-menu-bars {
+    display: unset;
+  }
+
   /* About */
 
   .about-props-container {
