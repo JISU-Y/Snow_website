@@ -18,19 +18,44 @@ h2 {
 
 /* Nav Bar */
 .navigation {
+  width: 100%;
   display: flex;
   justify-content: center;
+  position: fixed;
+  align-items: center;
+  z-index: 1;
+}
+.navigation.white {
+  background-color: #fff;
 }
 
 .navigation .nav-wrap {
   display: flex;
   justify-content: space-between;
-  padding: 33px 26px;
+  padding: 33px 5%;
   align-items: center;
-  position: fixed;
   width: 100%;
-  z-index: 1;
   max-width: 1200px;
+}
+
+.navigation .snow-logo.white {
+  /* 193x75 */
+  display: unset;
+  width: 90px;
+  height: 35px;
+}
+.navigation .snow-logo {
+  display: none;
+}
+
+.navigation.white .snow-logo.white {
+  display: none;
+}
+.navigation.white .snow-logo {
+  /* 193x75 */
+  display: unset;
+  width: 90px;
+  height: 35px;
 }
 
 .snow-logo,
@@ -38,10 +63,6 @@ h2 {
   /* 193x75 */
   width: 90px;
   height: 35px;
-}
-
-.snow-logo.white {
-  display: none;
 }
 
 .nav-menu {
@@ -59,6 +80,15 @@ h2 {
 
 .nav-menu li:hover {
   color: #fff;
+}
+
+.navigation.white .nav-menu li {
+  font-size: 14px;
+  list-style-type: none;
+  margin: 15px;
+  cursor: pointer;
+  color: black;
+  transition: 0.2s ease-in;
 }
 
 .nav-menu-bars {
@@ -321,7 +351,7 @@ h2 {
 }
 
 .project-testimonial {
-  height: 700px;
+  height: 750px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -342,7 +372,7 @@ h2 {
 
 .project-testimonial .testimonial-feedback .feedback-wrap {
   margin-top: 160px;
-  width: 60%;
+  width: 70%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -380,7 +410,7 @@ h2 {
   text-align: center;
 }
 .project-testimonial .testimonial-feedback .button-container {
-  margin-bottom: 50px;
+  margin: 50px 0;
 }
 
 .button-container .count-btn {
@@ -646,14 +676,6 @@ h2 {
     padding: 33px 0;
     width: 80%;
     max-width: 800px;
-  }
-
-  .snow-logo {
-    display: none;
-  }
-
-  .snow-logo.white {
-    display: unset;
   }
 
   .nav-menu {
