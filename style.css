@@ -77,6 +77,10 @@ h2 {
   color: #ccc;
   transition: 0.2s ease-in;
 }
+.nav-menu li a {
+  text-decoration: none;
+  color: inherit;
+}
 
 .nav-menu li:hover {
   color: #fff;
@@ -162,6 +166,7 @@ h2 {
 
 .home-container .down-btn i {
   transform: translateY(10%);
+  pointer-events: none;
 }
 
 .home-container .down-btn:hover {
